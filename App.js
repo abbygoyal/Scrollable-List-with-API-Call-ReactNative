@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Text, Button, View, TextInput, ScrollView } from "react-native";
 
 const App = () => {
-  const [data, setData] = useState(undefined);
+  const [data, setData] = useState([]);
   const getAPIData = async () => {
     const url = "https://jsonplaceholder.typicode.com/posts";
     let result = await fetch(url);
